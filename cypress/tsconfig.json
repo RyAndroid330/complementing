@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "types": ["cypress"]
+  },
+  "include": ["../src/**/*.cy.tsx", "../src/**/*.ts", "../src/**/*.tsx"]
+}
