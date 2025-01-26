@@ -27,5 +27,14 @@ module.exports = defineConfig({
       // Tillägg för Cucumber
       'cypress/e2e/**/*.feature',
     ],
+    supportFile: 'cypress/support/e2e.ts', // Specify a single support file for E2E
+  },
+
+  component: {
+    devServer: {
+      framework: 'react',
+      bundler: 'vite',
+    },
+    supportFile: 'cypress/support/component.ts', // Specify a single support file for component tests
   },
 });

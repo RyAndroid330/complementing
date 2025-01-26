@@ -5,9 +5,9 @@ Given('Jag är på hemsidan och knappen visar 0', () => {
 });
 
 When('Jag klickar på knappen', () => {
-  cy.get('button').click();
+  cy.get('button').eq(1).click();
 });
 
 Then('Knappen ska visa 1', () => {
-  cy.get('button').should('have.text', 'the count is 1');
+  cy.get('button').eq(1).should('have.text', 'the count is 1');
 });

@@ -3,7 +3,7 @@
 import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
 
 Given('I am on the home page', () => {
-  cy.visit('/');
+  cy.visit('http://localhost:5173');
 });
 
 When(
